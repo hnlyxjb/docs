@@ -18,7 +18,7 @@ opkg install /tmp/dropbear.ipk
 
 ## 刷入Uboot
 
-用[scp](https://winscp.net/translations/dll/6.3.1/chs.zip)将压缩包里的[`uboot.bin`](docs/software/nx30pro/uboot.bin ':ignore')传到路由器的tmp目录，scp端口号22，用户名和密码依旧是第一步,上传完成运行一下命令刷入uboot，此Uboot可以引导原厂固件
+用[scp](https://winscp.net/translations/dll/6.3.1/chs.zip)将压缩包里的[`uboot.bin`](/docs/software/nx30pro/uboot.bin ':ignore')传到路由器的tmp目录，scp端口号22，用户名和密码依旧是第一步,上传完成运行一下命令刷入uboot，此Uboot可以引导原厂固件
 
 ```powershell
 mtd write /tmp/uboot.bin FIP
